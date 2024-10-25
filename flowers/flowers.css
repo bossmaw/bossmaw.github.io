@@ -1174,3 +1174,57 @@ body {
 .not-loaded * {
   animation-play-state: paused !important;
 }
+
+
+/* For small screens, like mobile devices */
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+    padding: 20px 0px;
+  }
+
+  .flower {
+    transform: scale(0.7);
+  }
+
+  .flower__leaf {
+    width: 6vmin;
+    height: 8vmin;
+  }
+
+  .flower__line {
+    height: 40vmin;
+  }
+}
+
+/* For medium screens, like tablets */
+@media (max-width: 1024px) {
+  .flower {
+    transform: scale(0.8);
+  }
+
+  .flower__leaf {
+    width: 7vmin;
+    height: 9vmin;
+  }
+
+  .flower__line {
+    height: 50vmin;
+  }
+}
+
+/* For large screens, like desktops */
+@media (min-width: 1025px) {
+  .flower {
+    transform: scale(1);
+  }
+
+  .flower__leaf {
+    width: 8vmin;
+    height: 11vmin;
+  }
+
+  .flower__line {
+    height: 60vmin;
+  }
+}
